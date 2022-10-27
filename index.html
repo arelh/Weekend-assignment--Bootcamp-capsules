@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>capsules</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="logo">My Capsule</h1>
+      <input type="search" id="search" placeholder="Search..." />
+      <select name="searchBy" id="searchBy">
+        <option value="everything">Everything</option>
+        <option value="id">ID</option>
+        <option value="firstName">Name</option>
+        <option value="lastName">Last name</option>
+        <option value="capsule">Capsule</option>
+        <option value="age">Age</option>
+        <option value="city">City</option>
+        <option value="gender">Gender</option>
+        <option value="hobby">Hobby</option>
+      </select>
+      <button class="resetBtn btn">Reset!</button>
+    </div>
+    <div class="container table">
+      <div class="row headers">
+        <div class="cell theader" id="id">id</div>
+        <div class="cell theader" id="firstName">name</div>
+        <div class="cell theader" id="lastName">last name</div>
+        <div class="cell theader" id="capsule">capsule</div>
+        <div class="cell theader" id="age">age</div>
+        <div class="cell theader" id="city">city</div>
+        <div class="cell theader" id="gender">gender</div>
+        <div class="cell theader" id="hobby">hobby</div>
+        <div class="cell theader" id="buttons"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
