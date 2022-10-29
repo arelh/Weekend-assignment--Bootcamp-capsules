@@ -337,63 +337,8 @@ const allInfoStudents = [
   },
 ];
 
-// const paintHead = () => {
-//     const heading = document.createElement("div");
-//     //   const subtitles = document.createElement("div");
-//     //   const subtitle = document.createElement("div");
-//     heading.textContent = "text";
-//     heading.classList.add("title");
-//     table.appendChild(heading);
-//   };
-//   paintHead();
-
-//
-// const getArrOfCharacters = async () => {
-//   const { results } = await fetchData(
-//     `https://capsules7.herokuapp.com/api/user/${arr[i]}`
-//   );
-
-//   const arrPromises = [];
-//   for (let i = 0; i < results.length; i++) {
-//     const planet = fetchData(results[i].homeworld);
-//     arrPromises.push(planet);
-//   }
-//   //* Good practice
-//   const arrOfWorlds = await Promise.all(arrPromises);
-//   const structureData = structureCharObj(results, arrOfWorlds);
-//   return structureData;
-// };
-// getArrOfCharacters()
-
-//display the data
-// const titles = ["id", "name", "Capsule", "age", "city", "gender", "hobby"];
-
-// const paintRow = (arrOfData) => {
-//   const row = document.createElement("div");
-//   row.classList.add("row");
-
-//   arrOfData.forEach((e) => {
-//     const cell = document.createElement("div");
-//     cell.classList.add("cell");
-//     cell.textContent = e;
-//     row.appendChild(cell);
-//   });
-
-//   table.appendChild(row);
-// };
-// paintRow();
-
-// const paintRow = () => {
-//   const row = document.createElement("div");
-//   row.classList.add("row");
-
-//   arrOfData.forEach((e) => {
-//     const cell = document.createElement("div");
-//     cell.classList.add("cell");
-//     cell.textContent = e;
-//     row.appendChild(cell);
-//   });
-
-//   table.appendChild(row);
-// };
-// paintRow();
+const resetBtn = document.querySelector("button");
+resetBtn.addEventListener("click", () => {
+  console.log("hii");
+  window.location.reload();
+});

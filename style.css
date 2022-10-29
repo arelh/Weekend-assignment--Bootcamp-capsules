@@ -34,7 +34,11 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content:space-around;
-    }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+    
 .row {
     display: flex;
     justify-content: space-between;
