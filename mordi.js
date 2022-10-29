@@ -42,6 +42,7 @@ class Capsule {
         const loader = document.querySelector('.loading-wrap');
         const response = await fetch('https://apple-seeds.herokuapp.com/api/users/');
         const data = await response.json();
+        
         await Promise.all(data.map(async (e, i) => {
             let response2 = await fetch(`https://apple-seeds.herokuapp.com/api/users/${data[i].id}`);
             let data2 = await response2.json();
