@@ -52,6 +52,11 @@ const indexCap = async () => {
 };
 indexCap();
 
+const row = document.createElement("row");
+const cell = document.createElement("cell");
+
+//id,firstName,lastName,capsule,age,city,gender,hobby
+
 const buildRow = (jsonRow, htmlRow) => {
   htmlRow.insertCell(0).innerHTML = jsonRow.id;
   htmlRow.insertCell(1).innerHTML = jsonRow.firstName;
@@ -78,11 +83,6 @@ const infoCap = async () => {
   }
 };
 infoCap();
-
-const row = document.createElement("row");
-const cell = document.createElement("cell");
-
-//id,firstName,lastName,capsule,age,city,gender,hobby
 
 const allInfoStudents = [
   {
@@ -342,3 +342,12 @@ resetBtn.addEventListener("click", () => {
   console.log("hii");
   window.location.reload();
 });
+
+const id = document.querySelector("#id");
+const firstName = document.querySelector("#firstName");
+const lastName = document.querySelector("#lastName");
+const capsule = document.querySelector("#capsule");
+const age = document.querySelector("#age");
+const city = document.querySelector("#city");
+const gender = document.querySelector("#gender");
+const hobby = document.querySelector("#hobby");
